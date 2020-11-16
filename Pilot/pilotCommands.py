@@ -899,7 +899,7 @@ class LaunchAgent(CommandBase):
 
     # The file pilot.cfg has to be created previously by ConfigureDIRAC
     if self.pp.localConfigFile:
-      self.innerCEOpts.append(' -o /AgentJobRequirements/ExtraOptions=%s' % self.pp.localConfigFile)
+      #self.innerCEOpts.append(' -o /AgentJobRequirements/ExtraOptions=%s' % self.pp.localConfigFile)
       self.innerCEOpts.append(self.pp.localConfigFile)
 
   def __startJobAgent(self):
